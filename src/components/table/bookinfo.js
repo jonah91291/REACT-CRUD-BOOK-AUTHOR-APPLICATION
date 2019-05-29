@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from "axios";
 import { Link } from "react-router-dom";
-import toastr from 'toastr'
+import toastr from 'toastr';
 
 const Table = (props) => (
     <tr>
@@ -44,11 +44,11 @@ class Bookinfotable extends React.Component {
                 console.log(error);
             });
 
-
         toastr.success("book removed")
     }
 
     //2nd step it will come here
+
     componentWillMount() {
         setInterval(this.getData, 900)
     }
@@ -74,16 +74,22 @@ class Bookinfotable extends React.Component {
                         {
                             this.state.arrayInfo.map(data => {
                                 return (<Table key={data.id}>
-                                    <td>{data.bookname}</td>
-                                    <td>{data.authorname}</td>
-                                    <td onClick={() => this.handleDelete(data.id)} ><span aria-hidden="true">&times;</span></td>
-                                    <td>
-                                        <Link to={{ pathname: '/', state: { id: data.id, bookname: data.bookname, authorname: data.authorname } }} >
-                                            <span className="glyphicon glyphicon-print">edit
-                                            </span>
 
-                                        </Link>
+                                    <td>{data.bookname}</td>
+
+                                    <td>{data.authorname}</td>
+
+                                    <td onClick={() => this.handleDelete(data.id)} >
+                                    <span aria-hidden="true">&times;</span>
                                     </td>
+
+<td>
+    <Link to={{ pathname: '/', state: { id: data.id,bookname: data.bookname,authorname: data.authorname }}} >
+        <span className="glyphicon glyphicon-print">
+        edit
+        </span>
+    </Link>
+</td>
                                 </Table>)
                             })
                         }
