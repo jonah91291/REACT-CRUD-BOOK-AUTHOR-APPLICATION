@@ -65,8 +65,6 @@ class Addbook extends React.Component {
                 });
 
         }
-
-
     }
     //2nd step from data will get updated from inputform to update method and the state is changed
         update = (event) => {
