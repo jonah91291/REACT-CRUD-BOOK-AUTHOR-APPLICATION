@@ -9,8 +9,6 @@ const Table = (props) => (
     </tr>
 )
 
-
-
 //1st construstor will run
 class Bookinfotable extends React.Component {
     constructor(props) {
