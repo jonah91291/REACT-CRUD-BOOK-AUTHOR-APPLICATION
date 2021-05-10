@@ -74,9 +74,8 @@ class Bookinfotable extends React.Component {
                         {
                             this.state.arrayInfo.map(data => {
                                 return (<Table key={data.id}>
-
                                     <td>{data.bookname}</td>
-
+                                    <td>{data.authorname}</td>
                                     <td onClick={() => this.handleDelete(data.id)} >
                                     <span aria-hidden="true">&times;</span>
                                     </td>
