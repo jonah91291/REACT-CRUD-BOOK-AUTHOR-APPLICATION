@@ -102,5 +102,4 @@ class Bookinfotable extends React.Component {
 
 
 }
-
 export default Bookinfotable;
