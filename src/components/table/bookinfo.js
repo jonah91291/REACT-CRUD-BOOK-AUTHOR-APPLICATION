@@ -98,10 +98,7 @@ class Bookinfotable extends React.Component {
                     </tbody>
                 </table>
             </div>
-        );
+        )
     }
-
-
-
 }
 export default Bookinfotable;
