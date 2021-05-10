@@ -29,7 +29,7 @@ class Addbook extends React.Component {
                 authorname
             })
         }
-        this.showForm ();
+        this.showForm ()
     }
 
     //when the button is clicked the data will be taken into handlesubmit  button to post it into the server 
@@ -81,7 +81,7 @@ class Addbook extends React.Component {
                     this.setState({ noColor : "form-control is-invalid"})
                     } 
                     else{
-                    this.setState({ noColor : "form-control is-valid"})
+                    this.setState({ noColor : "form-control is-valid"});
                     }
                 }
                 if(event.target.name ==="authorname"){

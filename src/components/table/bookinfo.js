@@ -10,12 +10,14 @@ const Table = (props) => (
 )
 
 
+
 //1st construstor will run
 class Bookinfotable extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            arrayInfo: []
+            arrayInfo: [],
+            test:''
         };
     }
 
