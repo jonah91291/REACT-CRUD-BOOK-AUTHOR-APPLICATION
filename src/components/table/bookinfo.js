@@ -77,8 +77,6 @@ class Bookinfotable extends React.Component {
 
                                     <td>{data.bookname}</td>
 
-                                    <td>{data.authorname}</td>
-
                                     <td onClick={() => this.handleDelete(data.id)} >
                                     <span aria-hidden="true">&times;</span>
                                     </td>
